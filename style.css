@@ -1,0 +1,9 @@
+body {
+  background: rgb(184, 180, 180);
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 60px;
+  letter-spacing: 2px;
+  font-family: monospace;
+}
