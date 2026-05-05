@@ -1,17 +1,9 @@
-let sum = 0;
-let correct = 0;
-const Phi = (1 + Math.sqrt(5)) / 2;
-let s = 45;
-let x = 28.18 * Math.pow(2, -s) * ((s - 1) / s);
+let Phi = (1 + Math.sqrt(5)) / 2;
+let x = 5.2843816 * Math.pow(2, -(s - 3)); // Experimental Scaling Factor
 
-for (let i = 1; i <= 10 ** 6; i++) {
-  sum += 1 / i ** s;
-  correct = Phi;
-  correct = correct ** (1 / Math.PI);
-  correct = correct ** (1 / Phi);
-  correct = correct ** (x / Math.E);
-}
+let correct = Phi;
+correct = correct ** (1 / Math.PI);
+correct = correct ** (1 / Phi);
+correct = correct ** (x / Math.E);
 
-console.log(`Zeta(${s})`);
-console.log(`Actual : ${sum}`);
-console.log(`Akinda's Approximation: ${correct}`);
+console.log("Approximated Zeta:", correct);
