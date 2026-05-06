@@ -1,6 +1,6 @@
 const Phi = (1 + Math.sqrt(5)) / 2;
-let s = 18;
-let x = 0.00087830124524 * Math.pow(2, 15 - s);
+let s = 6.5;
+let x = 0.34268596825939;
 let sum = 0;
 let correct = 0;
 

@@ -1,8 +1,8 @@
+const Phi = (1 + Math.sqrt(5)) / 2;
 let s = 3;
-let x = 5.28438174309751;
+let x = /*5.28438174309751*/ (Math.PI * Math.E) / Phi;
 let sum = 0;
 let correct = 0;
-const Phi = (1 + Math.sqrt(5)) / 2;
 
 for (let i = 1; i <= 10 ** 6; i++) {
   sum += 1 / i ** s;
