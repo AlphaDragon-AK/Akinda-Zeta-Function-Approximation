@@ -1,10 +1,10 @@
-let s = 13;
-let x = 0.00352339117381;
+const Phi = (1 + Math.sqrt(5)) / 2;
+let s = 16;
+let x = 0.0004388134724;
 let sum = 0;
 let correct = 0;
-const Phi = (1 + Math.sqrt(5)) / 2;
 
-for (let i = 1; i <= 10 ** 4; i++) {
+for (let i = 1; i <= 10 ** 6; i++) {
   sum += 1 / i ** s;
   correct = Phi;
   correct = correct ** (1 / Math.PI);
