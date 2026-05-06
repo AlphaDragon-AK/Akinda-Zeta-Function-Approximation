@@ -41,7 +41,7 @@ The approximation is calculated using a bottom-up power tower approach:
 
 ```javascript
 let Phi = (1 + Math.sqrt(5)) / 2;
-let x = 5.2843816 * Math.pow(2, -(s - 3)); // Experimental Scaling Factor
+let x = 0.00087830124524 * Math.pow(2, 15 - s)
 
 let correct = Phi;
 correct = correct ** (1 / Math.PI);
